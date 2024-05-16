@@ -1,0 +1,15 @@
+.time-date-box{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;  
+    padding: 5px 0px 10px 5px;
+}
+
+.time{
+    font-size: 2.5vw;
+}
+
+.date{
+    font-size: 2vw;
+    font-style: italic;
+}

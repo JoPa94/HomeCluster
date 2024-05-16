@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+    background-image: url(./assets/waterfallnight.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+input{
+    font-family: 'Determination Mono';
+}
+
+@font-face {
+    font-family: 'Determination Mono';
+    src: url('./assets/fonts/DeterminationMonoWeb.ttf');
+  }
+
+  

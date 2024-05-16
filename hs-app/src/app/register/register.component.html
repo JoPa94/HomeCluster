@@ -1,0 +1,21 @@
+<div class="login-container">
+    <img class="image-container" src="../../assets/purpy.gif" alt="Purpy the Purple Pire">
+        <div class="login-form-container">
+            <h1>Sign Up</h1>
+            <form  class="input-container" #loginForm [formGroup]="applyForm" (submit)="submitApplication()">
+                <label for="user-name">Username:</label>
+                <input type="text" formControlName="firstName" id="first-name">
+                <label for="password">Password:</label>
+                <input type="password" formControlName="passWord" id="pw">
+                <label for="password2">Password²:</label>
+                <input type="password" formControlName="passWord" id="pw2">
+    
+                    <label for="email">E-Mail:</label>
+                    <input #email type="email" formControlName="email" id="email" (input)="validateMail(email.value)">
+                    <span [ngStyle]="{'visibility': isEmailValid ? 'hidden' : 'visible'}" class="invalid-input">Invalid E-Mail!</span>
+            </form>
+            <button (click)="login()" type="submit" class="login-btn"> Create!</button>
+            <a href="login">Already got an account?</a>
+        </div>
+    </div>
+    
