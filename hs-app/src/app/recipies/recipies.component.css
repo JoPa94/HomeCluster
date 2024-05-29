@@ -21,7 +21,11 @@
     overflow-y: auto;
 }
 
-.big-box {
+.recipies-container::-webkit-scrollbar {
+    display: none;
+}
+
+.recipie-card {
     display: flex;
     flex-direction: column;
     color: aliceblue;
@@ -30,7 +34,20 @@
     width: 45%;
     height: 60%;
     margin-bottom: 3rem;
+    /* From .profile */
+    /* overflow: hidden;
+    transition: height 0.2s ease;
+    margin: 8px;
+    vertical-align: top;
+    display: inline-block;
+    position: relative; */
 }
+
+.profile.profile--expanded {
+    height: 240px;
+    animation: expand 0.5s ease;
+}
+
 .recipies-img{
     margin: 1rem;
     display: flex;
@@ -70,7 +87,7 @@ p {
     display: flex;
 }
 
-.big-box:hover, .big-box-recipies:hover {
+.recipie-card:hover, .recipie-card-recipies:hover {
     color: black;
     outline: 1px solid black;
     background-color: rgba(166, 163, 214, 0.9);
